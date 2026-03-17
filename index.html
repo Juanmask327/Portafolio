@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Juan Manuel Benitez Skolik — Portafolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="stylesheets/styles.css">
+</head>
+<body>
+
+<div class="portafolio">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sidebar-top">
+
+      <div class="photo-wrapper">
+        <img src="images/Yo.jpg" alt="Juan Manuel Benitez Skolik">
+      </div>
+
+      <div class="name">Juan Manuel<br>Benitez Skolik</div>
+      <div class="role-tag">Disponible</div>
+
+      <div class="sidebar-divider"></div>
+
+      <div class="skills-section">
+        <div class="label">Habilidades</div>
+        <div class="skill-pills">
+          <span class="skill-pill">Java</span>
+          <span class="skill-pill">SQL</span>
+          <span class="skill-pill">Linux</span>
+          <span class="skill-pill">HTML/CSS</span>
+          <span class="skill-pill">Git</span>
+          <span class="skill-pill">IA</span>
+          <span class="skill-pill">Make</span>
+          <span class="skill-pill">Automatizaciones</span>
+          <span class="skill-pill">Redacción de Ensayos</span>
+          <span class="skill-pill">Documentación</span>
+        </div>
+      </div>
+
+      <div class="sidebar-divider"></div>
+
+      <div class="skills-section">
+        <div class="label">Idiomas</div>
+        <div class="skill-pills">
+          <span class="skill-pill">Español (Nativo)</span>
+          <span class="skill-pill">Inglés B2</span>
+        </div>
+      </div>
+
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/juan-manuel-benitez-skolik-9863673a7/" target="_blank" class="social-link">
+          <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          LinkedIn
+        </a>
+        <a href="https://github.com/Jmanuelsk" target="_blank" class="social-link">
+          <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+          GitHub
+        </a>
+      </div>
+
+    </div>
+  </aside>
+
+  <!-- MAIN -->
+  <main class="main">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-eyebrow">Portafolio Personal</div>
+      <h1 class="hero-title">
+        Ingeniero de<br>
+        Software <span class="accent">en formación.</span>
+      </h1>
+      <p class="hero-desc">
+        Estudiante de Ingeniería de Software en Uniempresarial, cursando tercer semestre y practicante en fUSoft. 
+        Con experiencia en desarrollo web, comandos Linux, Java y SQL, y apasionado por integrar inteligencia artificial 
+        en soluciones reales.
+      </p>
+    </section>
+
+    <!-- EXPERIENCIA -->
+    <section class="section">
+      <div class="section-header">
+        <span class="section-num">01</span>
+        <h2 class="section-title">Experiencia</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="exp-card">
+        <div class="exp-top">
+          <div class="exp-title">Practicante — fUSoft</div>
+          <span class="exp-badge">Actual</span>
+        </div>
+        <div class="exp-sub">Fundación Uniempresarial · Bogotá, Colombia</div>
+        <div class="exp-desc">
+          Participación en el desarrollo de una plataforma web orientada al control de finanzas personales, 
+          integrando funcionalidades basadas en inteligencia artificial. Aplicación de análisis empresarial 
+          y resolución de problemáticas reales en distintos sectores.
+        </div>
+      </div>
+
+      <div class="exp-card">
+        <div class="exp-top">
+          <div class="exp-title">Estudiante — Ingeniería de Software</div>
+          <span class="exp-badge">3er Semestre</span>
+        </div>
+        <div class="exp-sub">Uniempresarial (Cámara de Comercio de Bogotá)</div>
+        <div class="exp-desc">
+          Formación en fundamentos de software, lógica de programación, bases de datos SQL y metodologías 
+          de análisis empresarial. Experiencia en redacción de ensayos académicos y documentación técnica, 
+          así como en automatizaciones con Make (ex-Integromat) para optimizar flujos de trabajo.
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTAFOLIO -->
+    <section class="section">
+      <div class="section-header">
+        <span class="section-num">02</span>
+        <h2 class="section-title">Proyectos</h2>
+        <div class="section-line"></div>
+      </div>
+
+      <!-- Featured project styles -->
+      <style>
+        .portafolio-card--featured {
+          grid-column: 1 / -1;
+          aspect-ratio: unset;
+          align-items: flex-start;
+          padding: 28px;
+          gap: 14px;
+          text-align: left;
+        }
+        .portafolio-card-desc {
+          font-size: 13px;
+          line-height: 1.7;
+          color: #999;
+          text-align: left;
+        }
+        .portafolio-tags {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 6px;
+          margin-top: 4px;
+        }
+        .ptag {
+          font-size: 10px;
+          padding: 3px 9px;
+          border-radius: 20px;
+          background: rgba(233,64,22,0.1);
+          border: 1px solid rgba(233,64,22,0.25);
+          color: var(--accent2);
+          text-transform: uppercase;
+          letter-spacing: 0.5px;
+          font-weight: 500;
+        }
+      </style>
+
+      <div class="portafolio-grid">
+        <a href="#" class="portafolio-card portafolio-card--featured">
+          <div class="portafolio-icon">✍️</div>
+          <div class="portafolio-card-label">Sistema de Automatización de Firmas</div>
+          <div class="portafolio-card-desc">Desarrollo de un sistema de automatización que inserta firmas en celdas específicas de Excel y Word. Incluye envío de correo automático y una página web integrada para la detección y procesamiento de firmas.</div>
+          <div class="portafolio-tags">
+            <span class="ptag">Make</span>
+            <span class="ptag">Excel</span>
+            <span class="ptag">Word</span>
+            <span class="ptag">Web</span>
+            <span class="ptag">Automatización</span>
+            <span class="ptag">Email</span>
+          </div>
+        </a>
+        <a href="#" class="portafolio-card portafolio-card--featured" style="grid-column: unset; padding: 20px; align-items: flex-start; gap: 10px; aspect-ratio: unset; text-align: left;">
+          <div class="portafolio-icon">🏦</div>
+          <div class="portafolio-card-label">Sistema de Prioridad — Cola Bancaria</div>
+          <div class="portafolio-card-desc">Sistema que gestiona la atención de clientes en un banco mediante una cola de prioridad, diferenciando tipos de usuario (preferencial, general, empresarial) para optimizar los tiempos de espera.</div>
+          <div class="portafolio-tags">
+            <span class="ptag">Java</span>
+            <span class="ptag">Estructuras de Datos</span>
+            <span class="ptag">Proyecto Académico</span>
+            <span class="ptag">Sin repositorio público</span>
+          </div>
+        </a>
+        <a href="#" class="portafolio-card portafolio-card--featured" style="grid-column: unset; padding: 20px; align-items: flex-start; gap: 10px; aspect-ratio: unset; text-align: left;">
+          <div class="portafolio-icon">💰</div>
+          <div class="portafolio-card-label">App de Control de Finanzas</div>
+          <div class="portafolio-card-desc">Plataforma web para el control y seguimiento de finanzas personales, desarrollada en fUSoft. Integra funcionalidades basadas en inteligencia artificial para el análisis y categorización de gastos e ingresos.</div>
+          <div class="portafolio-tags">
+            <span class="ptag">Web</span>
+            <span class="ptag">IA</span>
+            <span class="ptag">fUSoft</span>
+            <span class="ptag">Proyecto Académico</span>
+            <span class="ptag">Sin repositorio público</span>
+          </div>
+        </a>
+        <a href="#" class="portafolio-card">
+          <div class="portafolio-icon">🌐</div>
+          <div class="portafolio-card-label">Portafolio Personal</div>
+          <div class="portafolio-coming">HTML · CSS · Git</div>
+        </a>
+        <a href="https://github.com/Jmanuelsk" target="_blank" class="portafolio-card">
+          <div class="portafolio-icon">📁</div>
+          <div class="portafolio-card-label">Ver en GitHub</div>
+          <div class="portafolio-coming">github.com/Jmanuelsk</div>
+        </a>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <div class="cta-bar">
+      <div class="cta-text">
+        <h4>¿Hablamos?</h4>
+        <p>Abierto a oportunidades, prácticas y colaboraciones.</p>
+      </div>
+      <a href="https://www.linkedin.com/in/juan-manuel-benitez-skolik-9863673a7/" target="_blank" class="cta-btn">
+        Contactar en LinkedIn →
+      </a>
+    </div>
+
+  </main>
+
+</div>
+
+</body>
+</html>
