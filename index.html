@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Juan Manuel B. Skolik | Software Engineer</title>
+  <meta name="description" content="Portafolio profesional de Juan Manuel B. Skolik, estudiante de Ingeniería de Software, Full Stack Developer y Data Engineer. Descubre mis proyectos de IoT, automatizaciones de flujos y publicaciones científicas." />
+  <meta name="keywords" content="Juan Manuel B. Skolik, Software Engineer, Full Stack Developer, Data Engineer, IoT, ClimaBogotá, Automatización, Python, JavaScript, Portafolio" />
+  <meta name="author" content="Juan Manuel B. Skolik" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Juan Manuel B. Skolik | Software Engineer" />
+  <meta property="og:description" content="Portafolio profesional de Juan Manuel B. Skolik. Proyectos destacados en IoT, Machine Learning y automatización de procesos." />
+  <meta property="og:site_name" content="Juan Manuel B. Skolik Portfolio" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:title" content="Juan Manuel B. Skolik | Software Engineer" />
+  <meta property="twitter:description" content="Portafolio profesional de Juan Manuel B. Skolik. Proyectos destacados en IoT, Machine Learning y automatización de procesos." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <a href="#hero" class="nav-logo"><span>jmb</span>.dev</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">Sobre mí</a></li>
+      <li><a href="#projects">Proyectos</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#automatismos">Automatismos</a></li>
+      <li><a href="#contact" class="nav-cta">Contacto</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-noise"></div>
+    <div class="hero-glow hero-glow--1"></div>
+    <div class="hero-glow hero-glow--2"></div>
+    <div class="hero-grid"></div>
+
+    <div class="hero-content">
+      <div class="hero-tag">
+        <span class="hero-tag-dot status-dot"></span>
+        <span>Available for new projects</span>
+      </div>
+
+      <h1>
+        Juan Manuel B. Skolik
+      </h1>
+
+      <p class="hero-sub-role">Full Stack Developer &amp; Data Engineer</p>
+
+      <p class="hero-sub">
+        Estudiante de <strong>Ingeniería de Software</strong> apasionado por construir
+        soluciones digitales elegantes, funcionales y con impacto real.
+      </p>
+
+      <div class="hero-btns">
+        <a href="#projects" class="btn btn-primary">
+          ⌗ Ver proyectos
+        </a>
+        <a href="#contact" class="btn btn-outline">Contactarme</a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat">
+          <div class="stat-num" data-target="5">0</div>
+          <div class="stat-label">Proyectos</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <div class="stat-num" data-target="12">0</div>
+          <div class="stat-label">Tecnologías</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <div class="stat-num" data-target="3">0</div>
+          <div class="stat-label">Sistemas en producción</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-code-card">
+      <div class="code-card-header">
+        <div class="code-card-dots">
+          <span class="dot-red"></span>
+          <span class="dot-yellow"></span>
+          <span class="dot-green"></span>
+        </div>
+        <span class="code-card-filename">climabogota.py</span>
+      </div>
+      <div class="code-card-body">
+        <div class="code-line"><span class="ck">from</span> <span class="cm">sklearn.ensemble</span> <span class="ck">import</span> <span class="cf">RandomForestRegressor</span></div>
+        <div class="code-line code-line--blank"></div>
+        <div class="code-line"><span class="cc"># 300 árboles · 43 features · 241K+ muestras</span></div>
+        <div class="code-line"><span class="cv">model</span> = <span class="cf">RandomForestRegressor</span>(</div>
+        <div class="code-line code-line--indent"><span class="ca">n_estimators</span>=<span class="cn">300</span>,</div>
+        <div class="code-line code-line--indent"><span class="ca">max_depth</span>=<span class="cn">12</span>,</div>
+        <div class="code-line code-line--indent"><span class="ca">random_state</span>=<span class="cn">42</span></div>
+        <div class="code-line">)</div>
+        <div class="code-line code-line--blank"></div>
+        <div class="code-line"><span class="cc"># MAE: 2.59°C · R²: 0.63 · latencia: ~50ms</span></div>
+        <div class="code-line"><span class="cv">prediction</span> = <span class="cv">model</span>.<span class="cf">predict</span>(<span class="cv">X_future</span>)</div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-mouse">
+        <div class="scroll-mouse-wheel"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTAINER SCROLL ANIMATION -->
+  <section id="scroll-reveal">
+    <div class="container">
+      <div class="csa-header fade-in">
+        <div class="section-label"><span>En acción</span></div>
+        <h2>Sistemas que generan<br><span class="accent">impacto real</span></h2>
+        <p class="section-desc">De 2–5 días hábiles a menos de 2 minutos. De datos crudos a predicciones en 50ms.</p>
+      </div>
+
+      <div class="csa-perspective-wrapper">
+        <div class="csa-container" id="csaContainer">
+          <div class="csa-browser">
+            <div class="csa-browser-bar">
+              <div class="csa-browser-dots">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="csa-browser-url">
+                <span class="csa-url-icon">🔒</span>
+                <span>climabogota.render.com/api/predict</span>
+              </div>
+              <div class="csa-browser-actions">
+                <span></span><span></span>
+              </div>
+            </div>
+            <div class="csa-browser-content">
+
+              <div class="csa-dashboard">
+                <div class="csa-dash-sidebar">
+                  <div class="csa-dash-logo">🌦️ ClimaBogotá</div>
+                  <div class="csa-dash-nav">
+                    <div class="csa-dash-nav-item csa-dash-nav-item--active">Dashboard</div>
+                    <div class="csa-dash-nav-item">Estaciones</div>
+                    <div class="csa-dash-nav-item">Predicciones</div>
+                    <div class="csa-dash-nav-item">Reportes</div>
+                  </div>
+                  <div class="csa-dash-status">
+                    <div class="csa-status-dot csa-status-dot--green"></div>
+                    <span>4 estaciones online</span>
+                  </div>
+                </div>
+
+                <div class="csa-dash-main">
+                  <div class="csa-dash-topbar">
+                    <span class="csa-dash-title">Panel principal</span>
+                    <span class="csa-dash-time">Bogotá · 2.600 m s.n.m. · Actualizado hace 5 min</span>
+                  </div>
+
+                  <div class="csa-metrics">
+                    <div class="csa-metric">
+                      <div class="csa-metric-icon">📊</div>
+                      <div class="csa-metric-val">241K+</div>
+                      <div class="csa-metric-lbl">Registros reales</div>
+                    </div>
+                    <div class="csa-metric csa-metric--accent">
+                      <div class="csa-metric-icon">🧠</div>
+                      <div class="csa-metric-val">2.59°C</div>
+                      <div class="csa-metric-lbl">MAE del modelo</div>
+                    </div>
+                    <div class="csa-metric">
+                      <div class="csa-metric-icon">⚡</div>
+                      <div class="csa-metric-val">~50ms</div>
+                      <div class="csa-metric-lbl">Latencia inferencia</div>
+                    </div>
+                    <div class="csa-metric">
+                      <div class="csa-metric-icon">🗺️</div>
+                      <div class="csa-metric-val">10 km²</div>
+                      <div class="csa-metric-lbl">Cobertura urbana</div>
+                    </div>
+                  </div>
+
+                  <div class="csa-chart-area">
+                    <div class="csa-chart-label">Temperatura últimas 6h (°C) — Estaciones activas</div>
+                    <div class="csa-chart">
+                      <div class="csa-chart-bars">
+                        <div class="csa-bar" style="--h:55%"><span>14.2</span></div>
+                        <div class="csa-bar" style="--h:62%"><span>14.8</span></div>
+                        <div class="csa-bar" style="--h:70%"><span>15.5</span></div>
+                        <div class="csa-bar" style="--h:65%"><span>15.1</span></div>
+                        <div class="csa-bar" style="--h:58%"><span>14.5</span></div>
+                        <div class="csa-bar csa-bar--accent" style="--h:72%"><span>15.8</span></div>
+                      </div>
+                      <div class="csa-chart-legend">
+                        <span>18:00</span><span>19:00</span><span>20:00</span><span>21:00</span><span>22:00</span><span>23:00</span>
+                      </div>
+                    </div>
+                    <div class="csa-prediction-badge">
+                      <span class="csa-pred-dot"></span>
+                      Predicción +30 min: <strong>16.2°C</strong>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="section-label"><span>Sobre mí</span></div>
+      <div class="about-grid fade-in">
+
+        <div class="about-avatar-col">
+          <div class="about-avatar">
+            <div class="avatar-initials">JMB</div>
+            <div class="avatar-ring"></div>
+          </div>
+          <div class="about-quick-info">
+            <div class="quick-info-item">
+              <span class="qi-icon">📍</span>
+              <span>Bogotá, Colombia</span>
+            </div>
+            <div class="quick-info-item">
+              <span class="qi-icon">🎓</span>
+              <span>Ingeniería de Software</span>
+            </div>
+            <div class="quick-info-item">
+              <span class="qi-icon">💼</span>
+              <span>Backend Dev @ FUSoft</span>
+            </div>
+            <div class="quick-info-item">
+              <span class="qi-icon">🔬</span>
+              <span>Investigación — Univ. Salamanca</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-text">
+          <h2>Hola, soy <span class="accent">Juan Manuel</span></h2>
+          <p>
+            Soy estudiante de <strong>Ingeniería de Software</strong>,
+            enfocado en el desarrollo full-stack y la creación de aplicaciones web modernas.
+            Me apasiona convertir ideas complejas en interfaces limpias y código mantenible.
+          </p>
+          <p>
+            Actualmente profundizando en arquitecturas de software, patrones de diseño y
+            buenas prácticas de desarrollo. Busco siempre escribir código limpio, escalable
+            y orientado a resultados reales.
+          </p>
+
+          <div class="skills-section">
+            <div class="skills-category">
+              <div class="skills-cat-label">Frontend</div>
+              <div class="skills-row">
+                <span class="skill-tag">HTML / CSS</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">React</span>
+              </div>
+            </div>
+            <div class="skills-category">
+              <div class="skills-cat-label">Backend & Data</div>
+              <div class="skills-row">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Node.js</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">REST APIs</span>
+                <span class="skill-tag">Machine Learning</span>
+              </div>
+            </div>
+            <div class="skills-category">
+              <div class="skills-cat-label">Infraestructura & Herramientas</div>
+              <div class="skills-row">
+                <span class="skill-tag">Docker</span>
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">IoT</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-label"><span>Proyectos</span></div>
+      <h2>Lo que he construido</h2>
+      <p class="section-desc">Una selección de proyectos que reflejan mi crecimiento y enfoque en resolver problemas reales.</p>
+
+      <div class="projects-grid" id="projectsGrid">
+
+        <div class="project-card project-card--featured fade-in" data-category="iot">
+
+          <div class="featured-topbar">
+            <div class="featured-topbar-pills">
+              <span class="feat-pill">🏆 Proyecto Principal</span>
+              <span class="feat-pill feat-pill--research">📄 Q1 Publication · Universidad de Salamanca</span>
+            </div>
+            <span class="feat-version">v1.2 · Bogotá 2.600 m s.n.m.</span>
+          </div>
+
+          <div class="featured-inner">
+
+            <div class="featured-left">
+              <div class="featured-title-row">
+                <div class="project-icon" style="width:52px;height:52px;font-size:1.6rem;">🌦️</div>
+                <div>
+                  <h3 class="project-title" style="font-size:1.35rem;">ClimaBogotá v1.2</h3>
+                  <div class="feat-subtitle">IoT · Machine Learning · Backend · Automatización</div>
+                </div>
+              </div>
+
+              <p class="project-desc" style="margin-top:0.75rem;">
+                Red de 4 estaciones meteorológicas con Raspberry Pi que predice la temperatura
+                con <strong style="color:var(--text)">30 minutos de anticipación</strong> usando
+                Random Forest (300 árboles, 43 features, 210k+ muestras), con distribución
+                automática vía Telegram y visualización en Grafana Cloud. Sistema desplegado
+                en Bogotá, Colombia a 2.600 m s.n.m. cubriendo ~10 km² urbanos.
+              </p>
+
+              <div class="feat-stats">
+                <div class="feat-stat">
+                  <span class="feat-stat-num">+241K</span>
+                  <span class="feat-stat-lbl">Registros reales</span>
+                </div>
+                <div class="feat-stat">
+                  <span class="feat-stat-num">2.59°C</span>
+                  <span class="feat-stat-lbl">MAE modelo</span>
+                </div>
+                <div class="feat-stat">
+                  <span class="feat-stat-num">R² 0.63</span>
+                  <span class="feat-stat-lbl">Coef. determinación</span>
+                </div>
+                <div class="feat-stat">
+                  <span class="feat-stat-num">5 min</span>
+                  <span class="feat-stat-lbl">Ciclo predicción</span>
+                </div>
+                <div class="feat-stat">
+                  <span class="feat-stat-num">~50 ms</span>
+                  <span class="feat-stat-lbl">Latencia inferencia</span>
+                </div>
+                <div class="feat-stat">
+                  <span class="feat-stat-num">10 km²</span>
+                  <span class="feat-stat-lbl">Cobertura urbana</span>
+                </div>
+              </div>
+
+              <div class="project-tags" style="margin-top:1.25rem;">
+                <span class="project-tag">Python</span>
+                <span class="project-tag">Flask 2.3</span>
+                <span class="project-tag">scikit-learn</span>
+                <span class="project-tag">Random Forest</span>
+                <span class="project-tag">n8n</span>
+                <span class="project-tag">PostgreSQL</span>
+                <span class="project-tag">MariaDB</span>
+                <span class="project-tag">Grafana Cloud</span>
+                <span class="project-tag">Telegram Bot</span>
+                <span class="project-tag">Raspberry Pi 4B</span>
+                <span class="project-tag">BME280</span>
+                <span class="project-tag">Render Cloud</span>
+                <span class="project-tag">Azure DevOps</span>
+              </div>
+
+              <div class="featured-bottom-row">
+                <div class="project-status">
+                  <span class="dot dot-yellow"></span>
+                  Sistema funcional · Deploy en Render pendiente
+                </div>
+                <div class="project-links">
+                  <a href="#" class="project-link" title="GitHub">⌥</a>
+                  <a href="https://www.preprints.org/manuscript/202606.1239" target="_blank" rel="noopener" class="project-link project-link--text" title="Paper JICRCR">Paper</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="featured-right">
+              <div class="arch-heading">Arquitectura · 5 Capas · HTTP REST</div>
+              <div class="arch-flow">
+                <div class="arch-layer">
+                  <span class="arch-icon">📡</span>
+                  <div class="arch-info">
+                    <span class="arch-name">Capa 1 — Hardware IoT</span>
+                    <span class="arch-desc">4× Raspberry Pi 4B + BME280 · cada 5 s</span>
+                  </div>
+                </div>
+                <div class="arch-connector">↓</div>
+                <div class="arch-layer">
+                  <span class="arch-icon">🗄️</span>
+                  <div class="arch-info">
+                    <span class="arch-name">Capa 2 — Almacenamiento local</span>
+                    <span class="arch-desc">4× MariaDB · alta frecuencia por estación</span>
+                  </div>
+                </div>
+                <div class="arch-connector">↓</div>
+                <div class="arch-layer">
+                  <span class="arch-icon">⚙️</span>
+                  <div class="arch-info">
+                    <span class="arch-name">Capa 3 — Orquestación ETL</span>
+                    <span class="arch-desc">n8n pipeline · ciclo completo cada 5 min</span>
+                  </div>
+                </div>
+                <div class="arch-connector">↓</div>
+                <div class="arch-layer arch-layer--ml">
+                  <span class="arch-icon">🧠</span>
+                  <div class="arch-info">
+                    <span class="arch-name">Capa 4 — ML + API REST</span>
+                    <span class="arch-desc">Flask 2.3 · Random Forest 300 árboles · ~50 ms</span>
+                  </div>
+                </div>
+                <div class="arch-connector">↓</div>
+                <div class="arch-layer">
+                  <span class="arch-icon">📤</span>
+                  <div class="arch-info">
+                    <span class="arch-name">Capa 5 — Distribución y visualización</span>
+                    <span class="arch-desc">Telegram · PostgreSQL · Grafana Cloud</span>
+                  </div>
+                </div>
+              </div>
+              <div class="arch-footer">Comunicación exclusiva via HTTP REST · Scrum 62 work items</div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- RESEARCH & PUBLICATIONS -->
+  <section id="research">
+    <div class="container">
+      <div class="section-label"><span>Research</span></div>
+      <h2>Research &amp; <span class="accent">Publications</span></h2>
+      <p class="section-desc">Academic research on urban IoT sensing and machine learning, developed in collaboration with Universidad de Salamanca's doctoral research group.</p>
+
+      <div class="pub-card fade-in">
+
+        <div class="pub-card-header">
+          <div class="pub-header-main">
+            <div class="pub-top-row">
+              <span class="pub-badge-q1" style="background: rgba(88, 166, 255, 0.1); border-color: rgba(88, 166, 255, 0.28); color: var(--primary);">
+                <span class="pub-badge-dot" style="background: var(--primary);"></span>
+                Preprint Published
+              </span>
+              <span class="pub-badge-dim">Research Article · 2026</span>
+              <span class="pub-badge-dim">Doctoral Research — Universidad de Salamanca</span>
+            </div>
+            <h3 class="pub-title">A Low-Cost IoT Architecture for Micro-Zone Climate Prediction and Meteorological Forecasting</h3>
+            <div class="pub-authors">
+              <span class="pub-author-primary">Juan M. B. Skolik</span>
+              <span class="pub-sep">·</span>
+              <span class="pub-author-collab">César A. G. Mateus, Darlan Noetzold, Valderi R. Q. Leithardt, Juan F. De Paz</span>
+            </div>
+          </div>
+          <a href="https://orcid.org/0009-0009-2170-4617" target="_blank" rel="noopener" class="orcid-badge">
+            <span class="orcid-id-box">iD</span>
+            ORCID · 0009-0009-2170-4617
+          </a>
+        </div>
+
+        <div class="pub-abstract-block">
+          <div class="pub-section-label">Abstract</div>
+          <p class="pub-abstract-text">This article presents the design and deployment of ClimaBogotá v1.2, a climate prediction system tailored for high-altitude urban micro-zones in Bogotá, Colombia. The system combines low-cost IoT sensing, machine learning modeling, and cloud-based orchestration to enable scalable and affordable meteorological forecasting. Its architecture comprises Raspberry Pi-based weather stations, a Random Forest model trained on engineered temporal features, and an n8n-driven automation pipeline for real-time inference and dissemination via Telegram, PostgreSQL, and Grafana. With a Mean Absolute Error of 2.59°C and an R² of 0.6286 on a 30-minute forecast horizon, the system demonstrates both predictive reliability and operational feasibility using free-tier cloud resources. Unlike traditional weather systems, ClimaBogotá emphasizes modularity, adaptability, and cost-efficiency, offering a replicable framework for decentralized climate monitoring in data-scarce urban environments. Temporal misalignment between sensor nodes was identified as the primary constraint, informing future enhancements toward distributed learning strategies.</p>
+        </div>
+
+        <div class="pub-metrics-band">
+          <div class="pub-metric">
+            <span class="pub-metric-num">310K+</span>
+            <span class="pub-metric-lbl">Real-world samples</span>
+          </div>
+          <div class="pub-metric-sep"></div>
+          <div class="pub-metric">
+            <span class="pub-metric-num">2.59°C</span>
+            <span class="pub-metric-lbl">Mean Absolute Error</span>
+          </div>
+          <div class="pub-metric-sep"></div>
+          <div class="pub-metric">
+            <span class="pub-metric-num">R² 0.6286</span>
+            <span class="pub-metric-lbl">Coefficient of det.</span>
+          </div>
+          <div class="pub-metric-sep"></div>
+          <div class="pub-metric">
+            <span class="pub-metric-num">~50 ms</span>
+            <span class="pub-metric-lbl">Inference latency</span>
+          </div>
+          <div class="pub-metric-sep"></div>
+          <div class="pub-metric">
+            <span class="pub-metric-num">300</span>
+            <span class="pub-metric-lbl">Forest estimators</span>
+          </div>
+          <div class="pub-metric-sep"></div>
+          <div class="pub-metric">
+            <span class="pub-metric-num">43</span>
+            <span class="pub-metric-lbl">Engineered features</span>
+          </div>
+          <div class="pub-metric-sep"></div>
+          <div class="pub-metric">
+            <span class="pub-metric-num">10 km²</span>
+            <span class="pub-metric-lbl">Urban coverage</span>
+          </div>
+        </div>
+
+        <div class="pub-bottom-row">
+          <div class="pub-keywords">
+            <span class="pub-kw">Climate Prediction</span>
+            <span class="pub-kw">IoT</span>
+            <span class="pub-kw">Machine Learning</span>
+            <span class="pub-kw">Micro-Zone</span>
+            <span class="pub-kw">n8n</span>
+            <span class="pub-kw">Time Series</span>
+            <span class="pub-kw">Workflow Orchestration</span>
+            <span class="pub-kw">Bogotá · 2,600 m a.s.l.</span>
+          </div>
+          <span class="pub-status-published">Preprint Published · DOI: 10.20944/preprints202606.1239.v1</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- AUTOMATISMOS -->
+  <section id="automatismos">
+    <div class="container">
+      <div class="section-label"><span>Automatismos</span></div>
+      <h2>Flujos que trabajan solos</h2>
+      <p class="section-desc">Sistemas end-to-end que eliminan trabajo manual conectando herramientas con lógica propia.</p>
+
+      <div class="auto-deco fade-in">
+        <div class="auto-deco-flow">
+          <div class="auto-deco-node">
+            <span class="adn-icon">📝</span>
+            <span class="adn-label">Google Form</span>
+          </div>
+          <div class="auto-deco-arrow"></div>
+          <div class="auto-deco-node">
+            <span class="adn-icon">⚡</span>
+            <span class="adn-label">Make</span>
+          </div>
+          <div class="auto-deco-arrow"></div>
+          <div class="auto-deco-node">
+            <span class="adn-icon">📜</span>
+            <span class="adn-label">Apps Script</span>
+          </div>
+          <div class="auto-deco-arrow"></div>
+          <div class="auto-deco-node">
+            <span class="adn-icon">📁</span>
+            <span class="adn-label">Drive</span>
+          </div>
+          <div class="auto-deco-arrow"></div>
+          <div class="auto-deco-node">
+            <span class="adn-icon">🌐</span>
+            <span class="adn-label">GitHub Pages</span>
+          </div>
+          <div class="auto-deco-arrow"></div>
+          <div class="auto-deco-node auto-deco-node--end">
+            <span class="adn-icon">✍️</span>
+            <span class="adn-label">Firma Digital</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="auto-cards-grid">
+
+        <div class="project-card fade-in">
+          <div class="project-header">
+            <div class="project-icon">✍️</div>
+            <div class="auto-prod-badge">En producción</div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Firma Digital para Tutores Empresariales</h3>
+            <div class="auto-context">Coformación Empresarial — Uniempresarial · FUSoft</div>
+            <p class="project-desc" style="margin-top:0.6rem;">
+              Sistema end-to-end que automatiza la generación de <strong style="color:var(--text)">5 documentos académicos</strong>
+              por estudiante y permite al tutor firmarlos digitalmente desde cualquier dispositivo en
+              <strong style="color:var(--text)">menos de 2 minutos</strong>, eliminando un proceso manual de 2–5 días hábiles.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Google Apps Script</span>
+              <span class="project-tag">Make</span>
+              <span class="project-tag">Drive API</span>
+              <span class="project-tag">GitHub Pages</span>
+              <span class="project-tag">JavaScript</span>
+              <span class="project-tag">HTML/CSS</span>
+              <span class="project-tag">Firma Digital</span>
+            </div>
+            <div class="card-btns">
+              <a href="https://juanmask327.github.io/Firma-tutores/" target="_blank" rel="noopener" class="btn-card-primary">
+                ↗ Ver demo en vivo
+              </a>
+              <div class="card-btns-row">
+                <a href="https://github.com/juanmask327/Firma-tutores" target="_blank" rel="noopener" class="btn-card-ghost">⌥ GitHub</a>
+                <button class="btn-card-ghost" onclick="openFirmaModal()">+ Detalles</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card fade-in">
+          <div class="project-header">
+            <div class="project-icon">📋</div>
+            <div class="auto-prod-badge">En producción</div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Sistema de Firma Digital — Actas de Coformación</h3>
+            <div class="auto-context">Uniempresarial / FUSoft · Sistema completo</div>
+            <p class="project-desc" style="margin-top:0.6rem;">
+              Sistema end-to-end que automatiza la generación, distribución y firma de
+              <strong style="color:var(--text)">Actas de Coformación Empresarial</strong> por
+              parte de los tres participantes (estudiante, tutor y profesor), entregando el
+              acta final en PDF sin ninguna intervención manual.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Google Apps Script</span>
+              <span class="project-tag">Make</span>
+              <span class="project-tag">Gmail API</span>
+              <span class="project-tag">Google Drive API</span>
+              <span class="project-tag">Canvas API</span>
+              <span class="project-tag">GitHub Pages</span>
+              <span class="project-tag">PDF Export</span>
+            </div>
+            <div class="card-btns">
+              <a href="https://juanmask327.github.io/FirmaDigital/" target="_blank" rel="noopener" class="btn-card-primary">
+                ↗ Ver demo en vivo
+              </a>
+              <div class="card-btns-row">
+                <a href="https://github.com/Juanmask327/FirmaDigital" target="_blank" rel="noopener" class="btn-card-ghost">⌥ GitHub</a>
+                <button class="btn-card-ghost" onclick="openFirmaModal2()">+ Detalles</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card fade-in">
+          <div class="project-header">
+            <div class="project-icon">✉️</div>
+            <div class="auto-prod-badge">En producción</div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Automatización de Validación de Formularios PDF</h3>
+            <div class="auto-context">Uniempresarial / FUSoft · Automatización completa</div>
+            <p class="project-desc" style="margin-top:0.6rem;">
+              Sistema end-to-end que automatiza la recepción, validación y enrutamiento de formularios PDF
+              enviados por correo. Utiliza IA (<strong style="color:var(--text)">Gemini 2.5 Flash</strong>)
+              para detectar campos incompletos y errores ortográficos, devolviendo el documento al estudiante
+              con correcciones detalladas o enviándolo a Coformación si está correcto.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Make (Integromat)</span>
+              <span class="project-tag">Gmail API</span>
+              <span class="project-tag">Gemini AI</span>
+              <span class="project-tag">Google OAuth 2.0</span>
+              <span class="project-tag">JSON</span>
+              <span class="project-tag">HTTP Modules</span>
+            </div>
+            <div class="card-btns">
+              <a href="https://us2.make.com/public/shared-scenario/pvzrmD3wBAy/verificacion-hojas-de-vida" target="_blank" rel="noopener" class="btn-card-primary">↗ Ver demo en vivo</a>
+              <div class="card-btns-row">
+                <button class="btn-card-ghost" onclick="openCodeModal()">⌗ Ver flujo JS</button>
+                <button class="btn-card-ghost" onclick="openValidacionModal()">+ Detalles</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-label"><span>Contacto</span></div>
+      <h2>Hablemos</h2>
+      <p class="section-desc">¿Tenés un proyecto en mente o querés colaborar? Escribime, respondo rápido.</p>
+
+      <div class="contact-grid fade-in">
+        <div class="contact-info">
+          <h3>Estoy disponible para</h3>
+          <p>Proyectos freelance, prácticas profesionales, colaboraciones académicas o simplemente intercambiar ideas sobre tecnología.</p>
+          <div class="contact-links">
+            <a href="mailto:Juanmabennitez2008@gmail.com" class="contact-item">
+              <div class="contact-icon">✉</div>
+              <div class="contact-detail">
+                <span class="contact-label">Email</span>
+                <span class="contact-value">Juanmabennitez2008@gmail.com</span>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/juan-manuel-benitez-skolik-9863673a7/" target="_blank" rel="noopener" class="contact-item">
+              <div class="contact-icon">in</div>
+              <div class="contact-detail">
+                <span class="contact-label">LinkedIn</span>
+                <span class="contact-value">Juan Manuel Benitez Skolik</span>
+              </div>
+            </a>
+            <a href="https://github.com/Juanmask327" target="_blank" rel="noopener" class="contact-item">
+              <div class="contact-icon contact-icon--mono">⌥</div>
+              <div class="contact-detail">
+                <span class="contact-label">GitHub</span>
+                <span class="contact-value">github.com/Juanmask327</span>
+              </div>
+            </a>
+            <a href="https://www.instagram.com/jmanuel._sk/" target="_blank" rel="noopener" class="contact-item">
+              <div class="contact-icon contact-icon--ig">ig</div>
+              <div class="contact-detail">
+                <span class="contact-label">Instagram</span>
+                <span class="contact-value">@jmanuel._sk</span>
+              </div>
+            </a>
+            <a href="https://orcid.org/0009-0009-2170-4617" target="_blank" rel="noopener" class="contact-item">
+              <div class="contact-icon contact-icon--orcid">iD</div>
+              <div class="contact-detail">
+                <span class="contact-label">ORCID</span>
+                <span class="contact-value">0009-0009-2170-4617</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <form id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" placeholder="Tu nombre" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="tu@email.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="asunto">Asunto</label>
+              <select id="asunto">
+                <option value="">Seleccioná un tema...</option>
+                <option value="freelance">Proyecto freelance</option>
+                <option value="practicas">Prácticas profesionales</option>
+                <option value="colaboracion">Colaboración académica</option>
+                <option value="otro">Otro</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" rows="5" placeholder="Contame sobre tu proyecto o idea..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">
+              Enviar mensaje
+            </button>
+          </form>
+          <div class="form-success" id="formSuccess">
+            <div class="check">✅</div>
+            <strong>¡Mensaje enviado!</strong><br>
+            Te respondo a la brevedad.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <a href="#hero" class="footer-logo"><span>jmb</span>.dev</a>
+      <p>Diseñado y construido por <span>Juan Manuel B. Skolik</span> &mdash; 2025</p>
+      <p class="footer-sub">Ingeniería de Software · Backend Developer @ FUSoft</p>
+    </div>
+  </footer>
+
+  <!-- SCROLL TOP -->
+  <button id="scrollTop" aria-label="Volver arriba">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 13L8 3M3 8L8 3L13 8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <!-- MODAL: Firma Digital para Tutores Empresariales -->
+  <div class="modal-overlay" id="firmaModal">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-header">
+        <div class="modal-header-info">
+          <div class="modal-title" id="modalTitle">Sistema de Automatización de Firma Digital para Tutores Empresariales</div>
+          <div class="modal-context">Coformación Empresarial — Uniempresarial · FUSoft · v1.0 en producción</div>
+        </div>
+        <button class="modal-close" onclick="closeFirmaModal()" aria-label="Cerrar">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-section">
+          <div class="modal-section-title">Flujo del sistema</div>
+          <div class="flow-steps">
+            <div class="flow-step"><span class="flow-step-icon">📝</span><span class="flow-step-name">Google Form</span><span class="flow-step-sub">Estudiante</span></div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-step"><span class="flow-step-icon">⚡</span><span class="flow-step-name">Make</span><span class="flow-step-sub">Trigger</span></div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-step"><span class="flow-step-icon">📜</span><span class="flow-step-name">Apps Script</span><span class="flow-step-sub">Generación</span></div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-step"><span class="flow-step-icon">📁</span><span class="flow-step-name">Google Drive</span><span class="flow-step-sub">5 docs + share</span></div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-step"><span class="flow-step-icon">🌐</span><span class="flow-step-name">GitHub Pages</span><span class="flow-step-sub">UI de firma</span></div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-step flow-step--accent"><span class="flow-step-icon">✍️</span><span class="flow-step-name">Firma Digital</span><span class="flow-step-sub">Tutor · &lt;2 min</span></div>
+          </div>
+        </div>
+        <div class="modal-section">
+          <div class="modal-section-title">Descripción del sistema</div>
+          <div class="modal-desc">
+            <p>En el modelo de coformación empresarial de Uniempresarial, cada estudiante debe gestionar <strong>cinco actas oficiales</strong> que requieren la firma del tutor, el estudiante y el profesor acompañante. Este proceso se realizaba 100% manual, generando demoras de hasta <strong>5 días hábiles</strong> y una carga administrativa significativa sobre el tutor.</p>
+            <p>El flujo automatizado: el estudiante llena un Google Form → Make detecta el envío y llama al Apps Script → el script crea automáticamente una carpeta en Drive con los 5 documentos prellenados y los comparte con todas las partes, enviando correos con un <strong>código único de acta (ACT-YYYY-NNN)</strong> → el tutor abre la página web, ingresa el código, dibuja su firma <strong>una sola vez</strong> (guardada en caché para usos futuros) y la envía → el script inserta la firma en las celdas correctas de cada documento.</p>
+          </div>
+        </div>
+        <div class="modal-section">
+          <div class="modal-section-title">Desafíos técnicos resueltos</div>
+          <div class="challenges-list">
+            <div class="challenge-item"><span><strong>Timeout de 40 s de Make</strong> — resuelto con procesamiento asíncrono usando PropertiesService y triggers de tiempo en Apps Script</span></div>
+            <div class="challenge-item"><span><strong>Error CORS al enviar la firma</strong> — convertido POST a GET con compresión de imagen (JPEG 300×80 px, &lt;8 KB)</span></div>
+            <div class="challenge-item"><span><strong>Permisos cross-account en Drive</strong> — gestionados con <code>setSharing()</code> en lugar de <code>addEditor()</code></span></div>
+            <div class="challenge-item"><span><strong>Celdas combinadas en Google Sheets</strong> — lógica de detección y escritura en merged cells de plantillas oficiales</span></div>
+            <div class="challenge-item"><span><strong>Caché de firma con localStorage</strong> — reutilización automática de la firma del tutor en sesiones futuras sin reingreso</span></div>
+          </div>
+        </div>
+        <div class="modal-section">
+          <div class="modal-section-title">Impacto</div>
+          <div class="impact-grid">
+            <div class="impact-item"><span class="impact-num">2–5 días → &lt;2 min</span><span class="impact-label">Reducción del tiempo total de firma</span></div>
+            <div class="impact-item"><span class="impact-num">5 documentos</span><span class="impact-label">Generados automáticamente por estudiante</span></div>
+            <div class="impact-item"><span class="impact-num">$0</span><span class="impact-label">Costo en licencias de software</span></div>
+            <div class="impact-item"><span class="impact-num">×20</span><span class="impact-label">Procesos paralelos soportados por Apps Script</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="https://juanmask327.github.io/Firma-tutores/" target="_blank" rel="noopener" class="btn-card-primary modal-cta">↗ Ver demo en vivo</a>
+        <a href="https://github.com/juanmask327/Firma-tutores" target="_blank" rel="noopener" class="btn-card-ghost">⌥ GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 2: Sistema de Firma Digital — Actas de Coformación -->
+  <div class="modal-overlay" id="firmaModal2">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle2">
+      <div class="modal-header">
+        <div class="modal-header-info">
+          <div class="modal-title" id="modalTitle2">Sistema de Firma Digital — Actas de Coformación Empresarial</div>
+          <div class="modal-context">Uniempresarial / FUSoft · Sistema completo · En producción</div>
+        </div>
+        <button class="modal-close" onclick="closeFirmaModal2()" aria-label="Cerrar">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-section">
+          <div class="modal-section-title">Flujo del sistema — 4 componentes en cadena</div>
+          <div class="flow-steps">
+            <div class="flow-step"><span class="flow-step-icon">📝</span><span class="flow-step-name">Google Form</span><span class="flow-step-sub">Registro</span></div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-step"><span class="flow-step-icon">⚡</span><span class="flow-step-name">Make</span><span class="flow-step-sub">5 módulos</span></div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-step"><span class="flow-step-icon">📜</span><span class="flow-step-name">Apps Script</span><span class="flow-step-sub">Backend central</span></div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-step"><span class="flow-step-icon">📁</span><span class="flow-step-name">Google Drive</span><span class="flow-step-sub">Carpeta + docs</span></div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-step"><span class="flow-step-icon">🌐</span><span class="flow-step-name">GitHub Pages</span><span class="flow-step-sub">UI de firma</span></div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-step flow-step--accent"><span class="flow-step-icon">📄</span><span class="flow-step-name">PDF final</span><span class="flow-step-sub">3 firmantes</span></div>
+          </div>
+        </div>
+        <div class="modal-section">
+          <div class="modal-section-title">Descripción del sistema</div>
+          <div class="modal-desc">
+            <p>Desarrollé un sistema end-to-end para automatizar la generación, distribución y firma digital de las <strong>Actas de Coformación Empresarial</strong> de Uniempresarial. El sistema cubre todo el ciclo de vida del documento: desde que el estudiante completa el formulario de registro hasta que los tres participantes reciben el acta firmada en PDF, sin ninguna intervención manual.</p>
+            <p>El flujo opera en cuatro etapas. Make detecta el registro en Sheets y llama al Apps Script, que crea una carpeta personal en Drive, llena la plantilla con placeholders (<code>{{Nombre Estudiante}}</code>, <code>{{Razón Social}}</code>, etc.) y envía correos personalizados con un <strong>código único de acta</strong>. Cada participante firma en la página web desde cualquier dispositivo. Cuando los tres firmaron, el script inserta las imágenes de firma en las <strong>6 hojas del acta</strong> y exporta el Sheets completo como PDF, que llega adjunto por correo a todos los participantes.</p>
+          </div>
+        </div>
+        <div class="modal-section">
+          <div class="modal-section-title">Decisiones técnicas destacadas</div>
+          <div class="challenges-list">
+            <div class="challenge-item"><span><strong>OAuth de Google con cuentas @gmail.com en Make</strong> — Google restringe el acceso directo a Drive desde conectores de terceros. Solución: el Apps Script actúa como intermediario; Make llama al script vía HTTP GET y delega todas las operaciones de Drive al entorno de Google</span></div>
+            <div class="challenge-item"><span><strong>Restricciones CORS al enviar la firma</strong> — Apps Script rechaza <code>fetch()</code> desde dominios externos. Solución: formulario HTML oculto con <code>target</code> apuntando a un <code>&lt;iframe&gt;</code> invisible, sin necesidad de proxy ni cambios en el backend</span></div>
+            <div class="challenge-item"><span><strong>Sincronización antes de exportar el PDF</strong> — Sheets necesita consolidar las imágenes de firma antes de estar disponibles en la exportación. Solución: <code>SpreadsheetApp.flush()</code> + <code>Utilities.sleep(3000)</code> como sincronización explícita</span></div>
+            <div class="challenge-item"><span><strong>Lógica anti-duplicados</strong> — si un participante envía su firma más de una vez, el script detecta el par código+rol existente y actualiza el registro en lugar de generar una entrada duplicada</span></div>
+            <div class="challenge-item"><span><strong>Drive secundario para espacio y permisos</strong> — la carpeta raíz del semestre se comparte con la cuenta principal como Editor, permitiendo crear subcarpetas sin autenticación adicional ni costos de almacenamiento extra</span></div>
+          </div>
+        </div>
+        <div class="modal-section">
+          <div class="modal-section-title">Resultados e impacto</div>
+          <div class="impact-grid">
+            <div class="impact-item"><span class="impact-num">Días → minutos</span><span class="impact-label">Reducción del tiempo total, de semanas a un flujo completamente automático</span></div>
+            <div class="impact-item"><span class="impact-num">6 hojas del acta</span><span class="impact-label">Generadas, llenadas y firmadas automáticamente por estudiante</span></div>
+            <div class="impact-item"><span class="impact-num">3 firmantes</span><span class="impact-label">Estudiante, tutor y profesor — trazabilidad en tiempo real del estado</span></div>
+            <div class="impact-item"><span class="impact-num">$0 en licencias</span><span class="impact-label">Stack 100% sobre herramientas de Google y GitHub Pages gratuitos</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="https://juanmask327.github.io/FirmaDigital/" target="_blank" rel="noopener" class="btn-card-primary modal-cta">↗ Ver demo en vivo</a>
+        <a href="https://github.com/Juanmask327/FirmaDigital" target="_blank" rel="noopener" class="btn-card-ghost">⌥ GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: Code viewer -->
+  <div class="modal-overlay" id="codeModal">
+    <div class="modal modal--code" role="dialog" aria-modal="true">
+      <div class="code-modal-header">
+        <div class="code-modal-title">
+          <span class="code-lang-badge">JS</span>
+          scenario.js — Lógica del flujo
+        </div>
+        <div style="display:flex;gap:0.5rem;align-items:center;">
+          <button class="copy-btn" id="copyBtn" onclick="copyCode()">Copiar código</button>
+          <button class="modal-close" onclick="closeCodeModal()" aria-label="Cerrar">✕</button>
+        </div>
+      </div>
+      <div class="code-body">
+        <pre><code class="code-content" id="codeContent"><span class="cc">// ============================================</span>
+<span class="cc">// AUTOMATIZACIÓN DE VALIDACIÓN DE FORMULARIOS PDF</span>
+<span class="cc">// Uniempresarial / FUSoft</span>
+<span class="cc">// ============================================</span>
+
+<span class="cc">// MÓDULO 1 — Gmail Watch Emails</span>
+<span class="cc">// Monitorea: Bandeja Formularios Uniempresarial</span>
+<span class="cc">// Criterio: Solo mensajes no leídos</span>
+<span class="cc">// Límite: 1 por ejecución</span>
+
+<span class="cc">// MÓDULO 2 — Router: ¿Tiene adjunto PDF?</span>
+<span class="cc">// Ruta 1 (Tiene PDF):       Has attachment === true</span>
+<span class="cc">// Ruta 2 (Sin PDF - Fallback): Notifica al remitente</span>
+
+<span class="cc">// MÓDULO 5 — HTTP: Gemini AI Analysis</span>
+<span class="cc">// Endpoint: generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent</span>
+<span class="cc">// Estructura esperada:</span>
+<span class="cc">// {</span>
+<span class="cc">//   "valido": boolean,</span>
+<span class="cc">//   "campos_incompletos": string[],</span>
+<span class="cc">//   "errores_ortograficos": string[]</span>
+<span class="cc">// }</span>
+
+<span class="cc">// MÓDULO 7 — Router: ¿Documento válido?</span>
+<span class="cc">// Ruta 1 (Documento válido):    valido === true  → Enviar a Coformación</span>
+<span class="cc">// Ruta 2 (Con errores - Fallback): Devolver al estudiante con detalle</span>
+
+<span class="cc">// MÓDULO 8 — Gmail: Send an Email (Válido)</span>
+<span class="cc">// Destinatario: Coformación</span>
+<span class="cc">// Adjunta el PDF original validado</span>
+
+<span class="cc">// MÓDULO 16 — Gmail: Send an Email (Con errores)</span>
+<span class="cc">// Destinatario: remitente original ({{1.from.email}})</span>
+<span class="cc">// Incluye lista de campos_incompletos y errores_ortograficos</span></code></pre>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: Detalles validación -->
+  <div class="modal-overlay" id="validacionModal">
+    <div class="modal" role="dialog" aria-modal="true">
+      <div class="modal-header">
+        <div class="modal-header-info">
+          <div class="modal-title">Automatización de Validación de Formularios PDF</div>
+          <div class="modal-context">Uniempresarial / FUSoft · Make + Gemini 2.5 Flash</div>
+        </div>
+        <button class="modal-close" onclick="closeValidacionModal()" aria-label="Cerrar">✕</button>
+      </div>
+      <div class="modal-body">
+        <div class="modal-section">
+          <div class="modal-section-title">Flujo del sistema — 9 módulos activos</div>
+          <div class="flow-steps">
+            <div class="flow-step"><span class="flow-step-icon">📧</span><span class="flow-step-name">Gmail Watch</span><span class="flow-step-sub">Bandeja entrada</span></div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-step"><span class="flow-step-icon">🔀</span><span class="flow-step-name">Router</span><span class="flow-step-sub">¿Tiene PDF?</span></div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-step"><span class="flow-step-icon">📎</span><span class="flow-step-name">HTTP Download</span><span class="flow-step-sub">Gmail API</span></div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-step flow-step--accent"><span class="flow-step-icon">🤖</span><span class="flow-step-name">Gemini 2.5</span><span class="flow-step-sub">Análisis IA</span></div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-step"><span class="flow-step-icon">🔀</span><span class="flow-step-name">Router</span><span class="flow-step-sub">¿Válido?</span></div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-step"><span class="flow-step-icon">📤</span><span class="flow-step-name">Gmail Send</span><span class="flow-step-sub">Enrutamiento</span></div>
+          </div>
+        </div>
+        <div class="modal-section">
+          <div class="modal-section-title">Detalles técnicos</div>
+          <div class="challenges-list">
+            <div class="challenge-item"><span><strong>Trigger:</strong> Gmail Watch Emails sobre la etiqueta "Formularios Uniempresarial", un mensaje por ejecución, solo no leídos</span></div>
+            <div class="challenge-item"><span><strong>IA:</strong> Gemini 2.5 Flash vía Google AI Studio (plan gratuito) — retorna JSON estructurado con <code>valido</code>, <code>campos_incompletos</code> y <code>errores_ortograficos</code></span></div>
+            <div class="challenge-item"><span><strong>Enrutamiento:</strong> automático según resultado — PDF correcto va a Coformación, PDF con errores regresa al remitente con lista detallada de correcciones</span></div>
+            <div class="challenge-item"><span><strong>Tiempo promedio de procesamiento:</strong> ~8 segundos por documento de extremo a extremo</span></div>
+          </div>
+        </div>
+        <div class="modal-section">
+          <div class="modal-section-title">Impacto</div>
+          <div class="impact-grid">
+            <div class="impact-item"><span class="impact-num">~8 segundos</span><span class="impact-label">Procesamiento completo por documento, de recepción a respuesta</span></div>
+            <div class="impact-item"><span class="impact-num">9 módulos</span><span class="impact-label">Escenario Make activo con doble router y análisis con IA</span></div>
+            <div class="impact-item"><span class="impact-num">0 intervención</span><span class="impact-label">El proceso corre completamente solo desde recepción hasta enrutamiento</span></div>
+            <div class="impact-item"><span class="impact-num">$0 en IA</span><span class="impact-label">Gemini 2.5 Flash en plan gratuito de Google AI Studio</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="https://us2.make.com/public/shared-scenario/hhSYIRaj2GP/auto-final" target="_blank" rel="noopener" class="btn-card-primary modal-cta">↗ Ver demo en Make</a>
+        <button class="btn-card-ghost" onclick="closeValidacionModal(); openCodeModal();">⌗ Ver flujo JS</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
