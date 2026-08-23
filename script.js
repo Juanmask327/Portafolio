@@ -79,10 +79,11 @@ const counterObserver = new IntersectionObserver((entries) => {
     if (entry.isIntersecting) {
       const el     = entry.target;
       const target = parseFloat(el.dataset.target);
+      const start  = el.dataset.start ? parseFloat(el.dataset.start) : 0;
       const isFloat = el.dataset.target.includes('.');
-      let current  = 0;
+      let current  = start;
       const steps  = 40;
-      const step   = target / steps;
+      const step   = (target - start) / steps;
       let frame    = 0;
 
       const timer = setInterval(() => {

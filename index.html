@@ -30,8 +30,8 @@
     <a href="#hero" class="nav-logo"><span>jmb</span>.dev</a>
     <ul class="nav-links" id="navLinks">
       <li><a href="#about">Sobre mí</a></li>
-      <li><a href="#projects">Proyectos</a></li>
       <li><a href="#research">Research</a></li>
+      <li><a href="#projects">Proyectos</a></li>
       <li><a href="#automatismos">Automatismos</a></li>
       <li><a href="#contact" class="nav-cta">Contacto</a></li>
     </ul>
@@ -59,6 +59,10 @@
 
       <p class="hero-sub-role">Full Stack Developer &amp; Data Engineer</p>
 
+      <a href="#research" class="hero-tag hero-tag--pub">
+        <span>📄 Publicación revisada por pares — Electronics (MDPI)</span>
+      </a>
+
       <p class="hero-sub">
         Estudiante de <strong>Ingeniería de Software</strong> apasionado por construir
         soluciones digitales elegantes, funcionales y con impacto real.
@@ -73,17 +77,17 @@
 
       <div class="hero-stats">
         <div class="stat">
-          <div class="stat-num" data-target="5">0</div>
+          <div class="stat-num" data-target="5" data-start="2">2+</div>
           <div class="stat-label">Proyectos</div>
         </div>
         <div class="stat-divider"></div>
         <div class="stat">
-          <div class="stat-num" data-target="12">0</div>
+          <div class="stat-num" data-target="12" data-start="6">6+</div>
           <div class="stat-label">Tecnologías</div>
         </div>
         <div class="stat-divider"></div>
         <div class="stat">
-          <div class="stat-num" data-target="3">0</div>
+          <div class="stat-num" data-target="3" data-start="1">1+</div>
           <div class="stat-label">Sistemas en producción</div>
         </div>
       </div>
@@ -244,11 +248,15 @@
             </div>
             <div class="quick-info-item">
               <span class="qi-icon">💼</span>
-              <span>Backend Dev @ FUSoft</span>
+              <span>Backend Dev — Freelance (ex-FUSoft, 2026)</span>
             </div>
             <div class="quick-info-item">
               <span class="qi-icon">🔬</span>
               <span>Investigación — Univ. Salamanca</span>
+            </div>
+            <div class="quick-info-item">
+              <span class="qi-icon">🤝</span>
+              <span>Oferente en Ruedas de Negocio — CCB</span>
             </div>
           </div>
         </div>
@@ -271,8 +279,6 @@
               <div class="skills-cat-label">Frontend</div>
               <div class="skills-row">
                 <span class="skill-tag">HTML / CSS</span>
-                <span class="skill-tag">JavaScript</span>
-                <span class="skill-tag">React</span>
               </div>
             </div>
             <div class="skills-category">
@@ -283,6 +289,8 @@
                 <span class="skill-tag">SQL</span>
                 <span class="skill-tag">REST APIs</span>
                 <span class="skill-tag">Machine Learning</span>
+                <span class="skill-tag">n8n</span>
+                <span class="skill-tag">Make</span>
               </div>
             </div>
             <div class="skills-category">
@@ -295,6 +303,10 @@
               </div>
             </div>
           </div>
+
+          <p style="font-size:var(--text-body-sm);color:var(--on-surface-dim);font-style:italic;margin-top:var(--sp-md);">
+            Nota: gran parte de mi flujo de trabajo —código, documentación e incluso este portafolio— está apoyada en herramientas de Inteligencia Artificial.
+          </p>
         </div>
 
       </div>
@@ -314,8 +326,8 @@
 
           <div class="featured-topbar">
             <div class="featured-topbar-pills">
+              <span class="feat-pill feat-pill--research">📄 Publicación revisada por pares · Universidad de Salamanca</span>
               <span class="feat-pill">🏆 Proyecto Principal</span>
-              <span class="feat-pill feat-pill--research">📄 Q1 Publication · Universidad de Salamanca</span>
             </div>
             <span class="feat-version">v1.2 · Bogotá 2.600 m s.n.m.</span>
           </div>
@@ -388,8 +400,7 @@
                   Sistema funcional · Deploy en Render pendiente
                 </div>
                 <div class="project-links">
-                  <a href="#" class="project-link" title="GitHub">⌥</a>
-                  <a href="https://www.preprints.org/manuscript/202606.1239" target="_blank" rel="noopener" class="project-link project-link--text" title="Paper JICRCR">Paper</a>
+                  <a href="https://doi.org/10.3390/electronics15143102" target="_blank" rel="noopener" class="project-link project-link--text" title="Paper — Electronics (MDPI)">Paper</a>
                 </div>
               </div>
             </div>
@@ -454,14 +465,21 @@
       <h2>Research &amp; <span class="accent">Publications</span></h2>
       <p class="section-desc">Academic research on urban IoT sensing and machine learning, developed in collaboration with Universidad de Salamanca's doctoral research group.</p>
 
-      <div class="pub-card fade-in">
+      <div class="pub-card pub-card--featured fade-in">
+
+        <div class="featured-topbar">
+          <div class="featured-topbar-pills">
+            <span class="feat-pill">🏆 Publicación Destacada</span>
+          </div>
+          <span class="feat-version">Electronics (MDPI) · Vol. 15, No. 14</span>
+        </div>
 
         <div class="pub-card-header">
           <div class="pub-header-main">
             <div class="pub-top-row">
               <span class="pub-badge-q1" style="background: rgba(88, 166, 255, 0.1); border-color: rgba(88, 166, 255, 0.28); color: var(--primary);">
                 <span class="pub-badge-dot" style="background: var(--primary);"></span>
-                Preprint Published
+                Peer-Reviewed Journal Article — Electronics (MDPI)
               </span>
               <span class="pub-badge-dim">Research Article · 2026</span>
               <span class="pub-badge-dim">Doctoral Research — Universidad de Salamanca</span>
@@ -532,7 +550,7 @@
             <span class="pub-kw">Workflow Orchestration</span>
             <span class="pub-kw">Bogotá · 2,600 m a.s.l.</span>
           </div>
-          <span class="pub-status-published">Preprint Published · DOI: 10.20944/preprints202606.1239.v1</span>
+          <span class="pub-status-published">Electronics (MDPI), Vol. 15, No. 14, Art. 3102 · DOI: <a href="https://doi.org/10.3390/electronics15143102" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;">10.3390/electronics15143102</a></span>
         </div>
 
       </div>
@@ -782,7 +800,7 @@
     <div class="footer-inner">
       <a href="#hero" class="footer-logo"><span>jmb</span>.dev</a>
       <p>Diseñado y construido por <span>Juan Manuel B. Skolik</span> &mdash; 2025</p>
-      <p class="footer-sub">Ingeniería de Software · Backend Developer @ FUSoft</p>
+      <p class="footer-sub">Ingeniería de Software · Backend Dev — Freelance (ex-FUSoft, 2026)</p>
     </div>
   </footer>
 
