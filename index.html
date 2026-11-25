@@ -90,7 +90,7 @@
 
       <div class="hero-stats">
         <div class="stat">
-          <div class="stat-num" data-target="8" data-start="3">3+</div>
+          <div class="stat-num" data-target="9" data-start="3">3+</div>
           <div class="stat-label">Proyectos</div>
         </div>
         <div class="stat-divider"></div>
@@ -482,7 +482,7 @@
           </div>
         </div>
 
-        <div class="projects-cards-grid">
+        <div class="projects-cards-grid projects-cards-grid--3">
 
           <div class="project-card fade-in">
             <div class="project-header">
@@ -548,60 +548,72 @@
 
           <div class="project-card fade-in">
             <div class="project-header">
-              <div class="project-icon">🎰</div>
-              <div class="auto-prod-badge status-badge--info">Juega en línea</div>
+              <div class="project-icon">📱</div>
+              <div class="auto-prod-badge status-badge--info">Equipo de 3</div>
             </div>
             <div class="project-body">
-              <h3 class="project-title">CasiQueNo</h3>
-              <div class="auto-context">Casino de simulación · Web y escritorio</div>
+              <h3 class="project-title">TaskHabit Academic</h3>
+              <div class="auto-context">App Android · Backend y base de datos</div>
               <p class="project-desc" style="margin-top:0.6rem;">
-                Tragamonedas, blackjack y ruleta europea. El retorno al jugador del tragamonedas se calcula de forma exacta y
-                se comprueba con una <strong style="color:var(--on-surface)">simulación de 1 millón de tiradas</strong>.
+                App de tareas, hábitos y asistencia con QR para estudiantes y docentes. Mi parte fue
+                <strong style="color:var(--on-surface)">el backend completo</strong>: modelo de datos en PostgreSQL con
+                migraciones, API REST en Spring Boot con el CRUD de usuarios, tareas y reportes, y sus pruebas.
               </p>
               <div class="project-tags">
-                <span class="project-tag">JavaScript</span>
-                <span class="project-tag">HTML/CSS</span>
-                <span class="project-tag">Electron</span>
-                <span class="project-tag">Probabilidad</span>
+                <span class="project-tag">Java</span>
+                <span class="project-tag">Spring Boot</span>
+                <span class="project-tag">PostgreSQL</span>
+                <span class="project-tag">Flyway</span>
+                <span class="project-tag">Android</span>
+                <span class="project-tag">Firebase Auth</span>
               </div>
               <div class="card-btns">
-                <a href="https://juanmask327.github.io/CasiQueNo/" target="_blank" rel="noopener" class="btn-card-primary">
-                  ↗ Jugar
-                </a>
-                <div class="card-btns-row">
-                  <a href="https://github.com/Juanmask327/CasiQueNo" target="_blank" rel="noopener" class="btn-card-ghost">⌥ GitHub</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-card fade-in">
-            <div class="project-header">
-              <div class="project-icon">⚽</div>
-              <div class="auto-prod-badge status-badge--dev">En desarrollo</div>
-            </div>
-            <div class="project-body">
-              <h3 class="project-title">BarrasBalas</h3>
-              <div class="auto-context">Videojuego 2.5D · Equipo de 3</div>
-              <p class="project-desc" style="margin-top:0.6rem;">
-                Un árbitro escapa de la barra brava hasta los camerinos sobreviviendo a 8 oleadas. Trabajo en equipo con ramas
-                y pull requests; mi parte: <strong style="color:var(--on-surface)">movimiento del árbitro, aerosol, esquive,
-                HUD, puntos y combos</strong>.
-              </p>
-              <div class="project-tags">
-                <span class="project-tag">Godot 4</span>
-                <span class="project-tag">GDScript</span>
-                <span class="project-tag">Git</span>
-                <span class="project-tag">Trabajo en equipo</span>
-              </div>
-              <div class="card-btns">
-                <a href="https://github.com/allan-gomez-creator/Barrasbalas" target="_blank" rel="noopener" class="btn-card-primary">
+                <a href="https://github.com/Juanmask327/TaskHabit-Academic" target="_blank" rel="noopener" class="btn-card-primary">
                   ⌥ Ver repositorio
                 </a>
               </div>
             </div>
           </div>
 
+        </div>
+
+        <div class="others-block">
+          <div class="others-head">
+            <h3 class="others-title">Otros proyectos</h3>
+            <p class="others-desc">Exploración fuera de mi foco principal.</p>
+          </div>
+          <div class="others-grid">
+
+            <div class="project-card other-card fade-in">
+              <div class="project-icon">🎰</div>
+              <div class="other-body">
+                <div class="other-title-row">
+                  <h4 class="other-title">CasiQueNo</h4>
+                  <span class="other-meta">JavaScript · Electron</span>
+                </div>
+                <p class="other-desc">Casino de tres juegos (tragamonedas, blackjack y ruleta) con el retorno al jugador verificado por una simulación de 1 millón de tiradas.</p>
+                <div class="other-links">
+                  <a href="https://juanmask327.github.io/CasiQueNo/" target="_blank" rel="noopener">↗ Jugar</a>
+                  <a href="https://github.com/Juanmask327/CasiQueNo" target="_blank" rel="noopener">⌥ GitHub</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card other-card fade-in">
+              <div class="project-icon">⚽</div>
+              <div class="other-body">
+                <div class="other-title-row">
+                  <h4 class="other-title">BarrasBalas</h4>
+                  <span class="other-meta">Godot 4 · En desarrollo</span>
+                </div>
+                <p class="other-desc">Videojuego 2.5D en equipo de 3: un árbitro escapa de la barra brava. Mi parte: movimiento, aerosol, esquive, HUD y combos.</p>
+                <div class="other-links">
+                  <a href="https://github.com/allan-gomez-creator/Barrasbalas" target="_blank" rel="noopener">⌥ GitHub</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
         </div>
 
       </div>
